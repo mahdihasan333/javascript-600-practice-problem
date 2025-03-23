@@ -26,10 +26,10 @@ console.log(totalUses, remaining)
 
 
 
-// ৪. ধর, তুই দুইটা স্ট্রিং লিখলি "Hello" আর "World"। এই দুইটা স্ট্রিংকে একসাথে জোড়া দিয়ে কীভাবে "Hello World" বানানো যায়, সেটা দেখানোর জন্য একটা প্রোগ্রাম লিখ।
+// ৪. ধর, তুই দুইটা স্ট্রিং লিখলি "Hello" আর "World"। এই দুইটা স্ট্রিংকে একসাথে জোড়া দিয়ে কীভাবে "HelloWorld" বানানো যায়, সেটা দেখানোর জন্য একটা প্রোগ্রাম লিখ।
 const firstString = 'Hello'
 const secondString = 'World'
-const connectedString = firstString + ' ' + secondString
+const connectedString = firstString + secondString
 console.log(connectedString)
 
 
