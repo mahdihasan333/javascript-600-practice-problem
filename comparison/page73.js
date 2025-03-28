@@ -38,6 +38,7 @@ console.log('apple' === 'apple')
 
 
 
+
 // ৫. একটা প্রোগ্রাম লিখে দেখ, "test" এবং "TEST"-এর মধ্যে "test" == "TEST" এবং "test" === "TEST"-এর আউটপুট কী হবে।
 // output --- false  এর কারন হলো JavaScript Case Sensitive
 console.log('test' == 'TEST')
