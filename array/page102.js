@@ -28,7 +28,7 @@ console.log(friends.indexOf('Rifat'))
 
 // ৪. তুই কিছু শহরের নাম লিখে রাখছিস- 'Dhaka', 'Chittagong', 'Sylhet'। এখন তুই ভাবলি, আরেকটা শহরের নাম যোগ করবি, কিন্তু ভুলে ছোট হাতের rajshahi যোগ করে ফেললি। এবার প্রোগ্রাম লিখে চেক কর, Rajshahi আছে কি না।
 const cityes = ['Dhaka', 'Chittagong', 'Sylhet', 'rajshahi']
-console.log(cityes.includes('Rajshahi'))
+console.log(cityes.includes('RajShahi'))
 
 
 
