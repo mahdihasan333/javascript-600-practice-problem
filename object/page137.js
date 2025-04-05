@@ -20,7 +20,7 @@ const article = {
     category: "Programming"
 }
 const articleKeys = Object.keys(article)
-const hasAuthor = articleKeys.includes(article)
+const hasAuthor = articleKeys.includes('author')
 console.log(hasAuthor)
 
 
@@ -47,7 +47,7 @@ const phone = {
     price: 85000
 };
 const phoneKeys = Object.keys(phone)
-for(const phoneKey in phone){
+for(const phoneKey of phoneKeys){
     const phoneValue = phone[phoneKey];
     console.log(phoneKey, phoneValue);
 }
