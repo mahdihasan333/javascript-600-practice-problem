@@ -9,7 +9,6 @@ function noDuplicate(array){
         }
     }
     return newArray
-
 }
 const array = noDuplicate([1, 5, 61, 5, 87, 7, 5, 81, 61])
 console.log(array)
