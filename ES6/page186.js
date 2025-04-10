@@ -59,3 +59,71 @@ const details1 = productDetails('mango', 100)
 const details2 = productDetails('apple')
 console.log(details1)
 console.log(details2)
+
+
+
+
+// ৬. একটা ফাংশন তৈরি কর, যা একটা তোর সব প্রিয় বইয়ের নাম অ্যারে প্যারামিটার হিসেবে নিবে। যদি কোনো প্যারামিটার না পাঠানো হয়, তাহলে ডিফল্ট একটা অ্যারে রাখবি, সেটার মধ্যে একটা মান থাকবে JS book নামে।
+function favoriteBooks(array = ['JS book']){
+    return array
+}
+const bookList1 = favoriteBooks(['The Alchemist', 'marhaba javascript a maro thaba'])
+const bookList2 = favoriteBooks([])
+console.log('My favorite books are ', bookList1)
+console.log('My favorite books are ', bookList2)
+
+
+
+
+// ৭. একটা ফাংশন তৈরি কর, যেখানে একটা অবজেক্ট প্যারামিটার নিবে। অবজেক্টে price এবং quantity থাকবে। যদি অবজেক্ট না পাঠানো হয়, ডিফল্ট মান হিসেবে price 10 এবং quantity 1 সেট কর। ফাংশন total price রিটার্ন করবে।
+function calculateTotalPrice(product = {price: 10, quantity: 1}){
+    const totalPrice = product.price * product.quantity
+    return totalPrice
+}
+const totalPrice1 = calculateTotalPrice({price: 100, quantity: 2})
+const totalPrice2 = calculateTotalPrice({price: 100})
+console.log(totalPrice1)
+console.log(totalPrice2)
+
+
+
+
+// ৮. এমন একটা ফাংশন বানাও, যেখানে একটা অ্যারে প্যারামিটার নিবে। প্রতিটি উপাদানকে 2 দিয়ে গুণ করে নতুন অ্যারে রিটার্ন করবে। যদি অ্যারে না দেওয়া হয়, ডিফল্ট হিসেবে [5, 10, 15] সেট কর।
+function arrayDouble(array = [5, 10, 15]){
+    const newArray = []
+    for(const item of array){
+        const sum = item * 2
+        newArray.push(sum)
+    }
+    return newArray
+}
+const doubleArray1 = arrayDouble([2, 4, 6])
+const doubleArray2 = arrayDouble([])
+console.log(doubleArray1)
+console.log(doubleArray2)
+
+
+
+
+// ৯. একটা ফাংশন তৈরি কর, যা একটা অবজেক্ট প্যারামিটার নিবে। অবজেক্টে principal এবং rate থাকবে। যদি অবজেক্ট না পাঠানো হয়, ডিফল্ট principal 1000 এবং rate 5 রাখ। ফাংশন simple interest হিসাব কর, এই ফর্মুলা দিয়ে (principal * rate / 100), তাহলে রেজাল্ট রিটার্ন করবে।
+function simpleInterest(interest = {principal: 1000, rate: 5}){
+    return (interest.principal * interest.rate) / 100
+}
+const interest1 = simpleInterest({principal: 2000, rate: 7})
+const interest2 = simpleInterest({})
+console.log(interest1)
+console.log(interest2)
+
+
+
+
+// ১০. একটি ফাংশন তৈরি কর, যা একটি অবজেক্ট প্যারামিটার নিবে। অবজেক্টে salary এবং tax থাকবে। যদি অবজেক্ট না পাঠানো হয়, ডিফল্ট salary 50000 এবং tax 10 সেট কর। ফাংশনের ভিতরে ট্যাক্সের পার্সেন্ট দিয়ে ট্যাক্সের টাকার পরিমাণ বের করবি। তারপর স্যালারি থেকে ট্যাক্সের টাকার পরিমাণ বিয়োগ করে রেজাল্ট রিটার্ন করবি।
+function calculateSalary(info = {salary: 50000, tax: 10}){
+    const tax = (info.salary * info.tax) / 100
+    const total = info.salary - tax
+    return total
+}
+const totalSalary1 = calculateSalary({salary: 20000, tax: 15})
+const totalSalary2 = calculateSalary({salary: 50000})
+console.log(totalSalary1)
+console.log(totalSalary2)
