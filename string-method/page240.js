@@ -1,0 +1,34 @@
+// 5 practice problem
+
+// ১. একটা স্ট্রিং বানা city, যার মান হবে Chattogram। এবার indexOf দিয়ে বের কর, g কোন ইনডেক্সে আছে।
+const city = 'Chattogram'
+console.log(city.indexOf('g'))
+
+
+
+
+// ২. একটা স্ট্রিং বানা division, যার মান হবে Sylhet includes দিয়ে দেখ, এই স্ট্রিংয়ের মধ্যে y আছে কি না।
+const division = 'Sylhet'
+console.log(division.includes('y'))
+
+
+
+
+// ৩. const name = 'Rifat'; স্ট্রিংয়ের শেষ ক্যারেক্টার বের কর।
+const name = 'Rifat'
+console.log(name[name.length - 1])
+
+
+
+
+// ৪. একটা স্ট্রিং বানা language, যার মান হবে javascript। এবার indexOf দিয়ে চেক কর, rip কোন ইনডেক্সে শুরু হয়েছে।
+const language = 'javascript'
+console.log(language.indexOf('rip'))
+
+
+
+
+// ৫. const text = 'Immutable'; স্ট্রিংয়ের দৈর্ঘ্য বের কর এবং চেক কর এটি mutable কি না।
+const text = 'Immutable'
+console.log(text.length)
+console.log(text.includes('mutable'))
