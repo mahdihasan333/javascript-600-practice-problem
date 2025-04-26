@@ -1,0 +1,40 @@
+// 4 practice problem
+
+// ১. একটা if কন্ডিশনের মধ্যে 'false' লিখে চেক কর। 'false' কি সত্য টাইপের ভ্যালু হিসেবে আচরণ করে, নাকি করে না।
+if('false'){
+    console.log('It is true')
+}
+else{
+    console.log('It is false')
+}
+
+
+
+
+// ২. একটা খালি অবজেক্টে {} কোনো প্রোপার্টি নাই। এইটা কী falsy একটা ভ্যালু। চেক কর if-এর ভিতরে শর্ত হিসেবে লিখে।
+const object = {}
+if(object){
+    console.log('It is true')
+}
+else{
+    console.log('It is false')
+}
+
+
+
+
+// ৩. একটা খালি অ্যারে [] কোনো উপাদান নাই। এইটা কি truthy ভ্যালু। চেক কর if-এর ভিতরে শর্ত হিসেবে লিখে।
+const array = []
+if(array){
+    console.log('It is true')
+}
+else{
+    console.log('It is false')
+}
+
+
+
+
+// ৪. একটা অ্যারে [] আছে, এইটার সামনে !! দিলে কী পাওয়া যাবে।
+const arr = []
+console.log(!!arr)
