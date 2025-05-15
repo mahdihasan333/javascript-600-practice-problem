@@ -10,7 +10,7 @@
 // এতে সব key ও string টাইপের মান অবশ্যই ডাবল কোটেশনে থাকতে হয়, এবং value হিসেবে শুধুমাত্র স্ট্রিং, নাম্বার, বুলিয়ান, null, অ্যারে অথবা অবজেক্ট থাকতে পারে— কিন্তু ফাংশন থাকতে পারে না।
 
 
-// ২. একটা অবজেক্ট বানা, যেখানে একটা user থাকবে। user-এর মধ্যে name, email, address, এবং একটা order history থাকবে। সেই order history-তে অন্তত তিনটা প্রোডাক্ট থাকবে। JSON.stringify দিয়ে পুরা অবজেক্টটাকে JSON স্ট্রিংয়ে কনভার্ট কর।
+// ২. একটা অবজেক্ট বানা, যেখানে একটা user থাকবে। user এর মধ্যে name, email, address, এবং একটা order history থাকবে। সেই order history-তে অন্তত তিনটা প্রোডাক্ট থাকবে। JSON.stringify দিয়ে পুরা অবজেক্টটাকে JSON স্ট্রিংয়ে কনভার্ট কর।
 const user = {
   name: "Mahdi",
   email: "mahdi@gmail.com",
