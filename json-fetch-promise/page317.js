@@ -22,5 +22,45 @@ const user = {
   ]
 };
 
-const jsonString = JSON.stringify(user);
-console.log(jsonString);
+const jsonStringUser = JSON.stringify(user);
+console.log(jsonStringUser);
+
+
+
+// ৩. Shopping cart অবজেক্ট বানা, যার মধ্যে products (array of products), total price (সবগুলো প্রোডাক্টের টোটাল প্রাইস) এবং user details (name, id, contact) থাকবে। এরপর এটাকে JSON স্ট্রিংয়ে কনভার্ট কর
+const shoppingCart = {
+  userDetails: {
+    id: '01',
+    name: 'Mahdi Hassan',
+    contact: '01576******'
+  },
+  products: [
+    {
+      id: 1,
+      name: 'Laptop',
+      price: 75000,
+      quantity: 2
+    },
+    {
+      id: 2,
+      name: 'mouse',
+      price: 1200,
+      quantity: 2
+    },
+    {
+      id: 3,
+      name: 'keyboard',
+      price: 2500,
+      quantity: 1
+    }
+  ],
+  totalPrice: 0
+}
+let totalPrice = 0
+for(const product of shoppingCart.products){
+  totalPrice += product.price
+}
+shoppingCart.totalPrice = totalPrice
+
+const jsonString = JSON.stringify(totalPrice)
+console.log(jsonStringUser)
